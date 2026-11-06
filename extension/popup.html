@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apex Capital - SteamDB AI Stock Recommender</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="brand">
+      <div class="brand-title">
+        <span style="color:#1a9fff">⚡</span> APEX CAPITAL <span style="font-weight:400;color:#64748b;font-size:11px">Stock Recommender</span>
+      </div>
+      <a href="https://ais-dev-kr5b5rohzuxver4ea7x3zm-583637110131.us-east1.run.app" target="_blank" style="color:#1a9fff;text-decoration:none;font-size:11px;font-family:monospace">
+        Web App ↗
+      </a>
+    </div>
+
+    <div class="legend">
+      <span>SteamDB Rating:</span>
+      <span class="legend-best">Blue = Best</span>
+      <span>•</span>
+      <span class="legend-ok">Green = OK</span>
+      <span>•</span>
+      <span class="legend-worst">Red = Worst</span>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-tier="all">All</button>
+      <button class="filter-btn filter-btn-best" data-tier="best">★ Best</button>
+      <button class="filter-btn filter-btn-ok" data-tier="ok">✓ OK</button>
+      <button class="filter-btn filter-btn-worst" data-tier="worst">⚠ Worst</button>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search ticker...">
+    </div>
+  </div>
+
+  <div id="featuredCardContainer"></div>
+
+  <div class="table-container">
+    <div style="font-family:monospace;font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px">
+      Quick Catalog (Click to inspect)
+    </div>
+    <div id="stockListContainer"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
